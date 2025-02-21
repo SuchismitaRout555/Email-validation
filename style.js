@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("step2").style.display = "none";
         document.getElementById("step3").style.display = "block";
 
-        let userName = document.getElementById("email").value.split("@")[0]; // Extract name from email
+        let userName = document.getElementById("email").value.split("@")[0];
         document.getElementById("user-name").textContent = userName;
     });
 
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function validateEmail(email) {
-    return /^[a-zA-Z0-9._%+-]+@marmeto\.com$/.test(email); // Only allows @marmeto.com emails
+    return /^[a-zA-Z0-9._%+-]+@marmeto\.com$/.test(email); 
 }
 
 function validatePhone(phone) {
